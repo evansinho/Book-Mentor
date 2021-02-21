@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
+import ModalForm from './ModalForm';
 import Modal from "react-bootstrap/modal";
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 
@@ -52,7 +53,7 @@ const Scheduler = () => {
           <Modal.Title>Add Calendar Event</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h1>hello</h1>
+          <ModalForm />
         </Modal.Body>
       </Modal>  
       <Calendar
