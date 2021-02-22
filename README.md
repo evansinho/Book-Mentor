@@ -38,7 +38,7 @@ When I click on a time slot that has already been allocated to a call Then I see
 
 ## Live Demo
 
-[Heroku App Link](https://shrouded-river-43787.herokuapp.com/)
+[Heroku App Link](https://mentor-booking.herokuapp.com)
 
 ## screenshots
 
