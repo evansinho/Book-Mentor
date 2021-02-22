@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Book-Mentor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A calendar scheduler application for booking a meeting(call) with a mentor..
 
-## Available Scripts
+## User stories
 
-In the project directory, you can run:
+As a student
+I want to book a call with my mentor
+So that I can have a mentoring session during my course
 
-### `npm start`
+[API documentation](https://cfcalendar.docs.apiary.io/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Scenario 1:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Given I'm in the calendar page
+When I click on a date
+Then I see all the time slots containing the available and already allocated call sessions
 
-### `npm test`
+### Scenario 2:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Given I have chosen a date on the calendar page
+When I click on a free time slot
+Then I see a field where I type the reason for the call
+And I click on the button Confirm Call
+Then I see a confirmation message with the date, time, and reason for my call
 
-### `npm run build`
+### Scenario 3:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Given I have chosen a date in the calendar page
+When I click on a time slot that has already been allocated to a call Then I see an error message about the allocated slot
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- ReactJS
+- React Big Calendar
+- React-Boostrap
+- Node/Express and Mongoose- For persisting booking to a db.
 
-### `npm run eject`
+## Live Demo
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[Heroku App Link](https://shrouded-river-43787.herokuapp.com/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Homepage
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![screenshot](images/screenshot1.png)
 
-## Learn More
+### Modal
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![screenshot](images/screenshot2.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Getting Started
 
-### Code Splitting
+To get a local copy up and running follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Usage
 
-### Analyzing the Bundle Size
+- Fork/Clone this project to your local machine
+- Open folder in your local enviroment and run these lines of code to get started:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Install gems with:
 
-### Making a Progressive Web App
+```React
+    npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+then run
 
-### Advanced Configuration
+```React
+  npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Then open a web page and go to [port 3000 on your local machine.](http://localhost:3000)
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The application was deployed on heroku.
+To deploy your own copy, you can follow the following [steps:](https://devcenter.heroku.com/articles/git)
 
-### `npm run build` fails to minify
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👤 **Evanson Igiri**
+
+## 🤝 Contributing
+
+Contributions and feature requests are welcome!
+
+Start by:
+
+- Forking the project
+- Cloning the project to your local machine
+- `cd` into the project directory
+- Run `git checkout -b your-branch-name`
+- Make your contributions
+- Push your branch up to your forked repository
+- Open a Pull Request with a detailed description to the development(or master if not available) branch of the original project for a review
+
+## Show your support
+
+Give a ⭐️ if you like this project!
