@@ -29,6 +29,10 @@ Then I see a confirmation message with the date, time, and reason for my call
 Given I have chosen a date in the calendar page
 When I click on a time slot that has already been allocated to a call Then I see an error message about the allocated slot
 
+### Design Idea
+
+I used the React Big Calendar and populated the event method of the calendar with the mentor API given as slots. Then an onClick event on the slot pops up a modal and with a form that user inputs his/her reason for the call and hit the confirm call buuton and the data is persisted to a database. Now here comes my challenge which is checking if an event is already booked, I wanted to check for an event in the database with the event ID but the events was not coming from my own database so doing that was a bit tricky.
+
 ## Built With
 
 - ReactJS
