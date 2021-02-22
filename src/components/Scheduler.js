@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
-import Modal from "react-bootstrap/modal";
+import { Modal } from "react-bootstrap";
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
